@@ -7,6 +7,7 @@
 #header h1 {
     display:block;
     text-align: center;
+    font-family: 'Tahoma';
 }
 
 #footer .container{
@@ -15,7 +16,11 @@
 
 #footer h4 {
     display:block;
-    text-align: center;
+    text-align: center;    
+}
+
+td {
+  text-align: right; 
 }
 
 </style>

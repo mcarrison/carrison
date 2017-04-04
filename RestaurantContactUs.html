@@ -7,9 +7,9 @@
       rel="stylesheet" 
       type="text/css" />
 	<style>
-		td {
-			font-weight: bold;
-		}
+		input:required {
+				font-weight: bold;
+						}
 	</style>   
     <body>
 		<header>
@@ -37,20 +37,21 @@
 	<form action="contactUs.html" method="POST">
 		<table>
 			<tr>
-				<td align="right">Name:</td> 
-				<td align="left"><input type="text" name="first_nme" size="33.5"/></td>
+				<td><strong>Name:</strong></td> 
+				<td align="left"><input type="text" name="first_nme" size="33.5" required/></td>
 			</tr>
 			<tr>
-				<td align="right">Email:</td> 
-				<td align="left"><input type="text" name="email" size="33.5"/></td>
+				<td><strong>Email:</strong></td> 
+				<td align="left"><input type="text" name="email" size="33.5" required/></td>
 			</tr>
             <tr>
-				<td align="right">Phone:</td> 
-				<td align="left"><input type="text" name="phone" size="33.5"/></td>
+				<td><strong>Phone:</strong></td> 
+				<td align="left"><input type="text" name="phone" size="33.5" required/></td>
 			</tr>
 			<tr>
-				<td align="right">Reason for Inquiry:</td> 
-				<td align="left"><select name="reason" width="223" style="width: 222px">
+				<td><strong>Reason for Inquiry:</strong></td> 
+				<td align="left"><select name="reason" width="223" style="width: 222px" required>
+									<option selected disabled hidden style='display: none' value=''></option>
 									<option value="Catering">Catering</option>
 									<option value="Private Party">Private Party</option>
 									<option value="Feedback">Feedback</option>
@@ -58,25 +59,27 @@
 								</select></td>
 			</tr>
 			<tr>
-				<td align="right">Additional Information:</td> 
+				<td>Additional Information:</td> 
 				<td align="left"><textarea name="additionalinfo" rows="4" cols="25"></textarea></td>
 			</tr>
             <tr>
-				<td align="right">Have you been to the restaurant?</td> 
+				<td>Have you been to the restaurant?</td> 
 				<td align="left"><input type="radio" name="beenhere" value="No" checked/>No
 								<input type="radio" name="beenhere" value="Yes"/>Yes</td>
 			</tr>
 			<tr>
-				<td align="right">Best days to contact you:</td> 
-				<td align="left"><input type="checkbox" name="contactday" value="M"/>M
-                                <input type="checkbox" name="contactday" value="T"/>T
-                                <input type="checkbox" name="contactday" value="W"/>W
-                                <input type="checkbox" name="contactday" value="Th"/>Th
-                                <input type="checkbox" name="contactday" value="F"/>F</td>
+				<td><strong>Best days to contact you:</strong></td> 
+				<td align="left">
+							<input type="checkbox" name="contactday" value="M" required/>M
+                            <input type="checkbox" name="contactday" value="T" required/>T
+                            <input type="checkbox" name="contactday" value="W" required/>W
+                            <input type="checkbox" name="contactday" value="Th"required/>Th
+                            <input type="checkbox" name="contactday" value="F" required/>F
+				</td>
 			</tr>
 			<tr>
-				<td align="right"></td> 
-				<td align="right"><input type="submit" value="Send Request"/></td>
+				<td></td> 
+				<td><input type="submit" value="Send Request" required/></td>
 			</tr>
 		<table>
 	</form>
