@@ -1,19 +1,7 @@
 <style>
-   .warning {
-    font-weight: bold;
-    color: red;
-  }
-  
-  div.warning {
-    font-style: italic;
-  }
-  h2 {
-  border: 4px dashed red;
-}
-h2 {
-    color: royalblue;
-}
+
 tr {
   text-align: center;
-}
+  }  
+
 </style>
