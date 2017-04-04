@@ -1,0 +1,21 @@
+<style>
+
+#header .container{
+  margin: auto;
+}
+
+#header h1 {
+    display:block;
+    text-align: center;
+}
+
+#footer .container{
+  margin: auto;
+}
+
+#footer h4 {
+    display:block;
+    text-align: center;
+}
+
+</style>
