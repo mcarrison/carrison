@@ -1,7 +1,41 @@
 <style>
 
-tr {
+a {
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: limegreen;
+  background-color: black;
+  font-family: monospace;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+caption{
+  font-weight: bold;
+  font-size: large;
+}
+
+th{
+  background-color: lightslategrey;
+}
+
+td {
+  font-style: italic;
+  background-color: darkorchid;
   text-align: center;
-  }  
+}
 
 </style>
