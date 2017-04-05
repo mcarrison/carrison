@@ -6,6 +6,9 @@
 	<link href="restaurantStyles.css" 
       rel="stylesheet" 
       type="text/css" />
+<link href="css/bootstrap.css"
+	  rel="stylesheet"
+	  type="text/css" />
 	<style>
 	input:required {
 		font-weight: bold;
@@ -17,20 +20,12 @@
 				<div class="container">
 					<h1>Colt's Fine Diner</h1>
 				</div>
-			</div>
-			<hr>
-			&nbsp;
-			&nbsp;
-			&nbsp;
-			<a href="HomePage.html">Home</a>
-			&nbsp;
-			&nbsp;
-			&nbsp;
-			<a href="Menu.html">Menu</a>
-			&nbsp;
-			&nbsp;
-			&nbsp;
-			<a href="RestaurantContactUs.html">Contact Us</a>
+			</div>			
+            <ul class="nav nav-pills">
+                <li><a href="HomePage.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li class="active"><a href="RestaurantContactUs.html">Contact Us</a></li>
+            </ul>
 		</header>
         <hr>
         <div>
@@ -50,7 +45,7 @@
 			</tr>
 			<tr>
 				<td><strong>Reason for Inquiry:</strong></td> 
-				<td align="left"><select name="reason" width="223" style="width: 222px" required>
+				<td align="left"><select name="reason" style="width: 257.75px" required>
 									<option selected disabled hidden style='display: none' value=''></option>
 									<option value="Catering">Catering</option>
 									<option value="Private Party">Private Party</option>
@@ -60,7 +55,7 @@
 			</tr>
 			<tr>
 				<td>Additional Information:</td> 
-				<td align="left"><textarea name="additionalinfo" rows="4" cols="25"></textarea></td>
+				<td align="left"><textarea name="additionalinfo" rows="4" cols="38"></textarea></td>
 			</tr>
             <tr>
 				<td>Have you been to the restaurant?</td> 
