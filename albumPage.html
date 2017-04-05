@@ -6,6 +6,10 @@
 <link href="albumStyles.css" 
       rel="stylesheet" 
       type="text/css" />
+<!-- Latest compiled and minified CSS -->
+<link href="css/bootstrap.css"
+	  rel="stylesheet"
+	  type="text/css" />
 <style>
  li {
 	  font-style: italic;
@@ -16,13 +20,21 @@
 	background-position: center top;
 	background-attachment: fixed;
 }
+tbody tr:nth-child(even) {
+  background-color: rosybrown;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: LawnGreen;
+}
 </style> 
 	<body>
 		<div id="img">
 			<p align="center">
 				<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/TheBeatles68LP.jpg"
 				alt="File not found"
-				style="width: 250px;height: 250px;"/>
+				style="width: 250px;height: 250px;"
+				class="img-circle"/>
 			</p>	
 		</div>		
 		<h1 align="center" style="font-family:fantasy;">The Beatles, also known as the White Album</h1>

@@ -25,7 +25,7 @@ table, th, td {
 
 caption{
   font-weight: bold;
-  font-size: large;
+  font-size: large;  
 }
 
 th{
@@ -34,7 +34,6 @@ th{
 
 td {
   font-style: italic;
-  background-color: darkorchid;
   text-align: center;
 }
 
