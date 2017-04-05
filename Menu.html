@@ -6,15 +6,30 @@
     <link href="restaurantStyles.css" 
       rel="stylesheet" 
       type="text/css" />
-    <style>
-  
-        td {
+    <style>  
+        #menu td {
             text-align: center;
         }
-        body {
-            background-color:peru;
+        #beverages td{
+            text-align: justify;
+            width: 0%;
+            padding: 0px 10px 0px 0px;
+            font-size: small;
         }
-    </style>   
+        body {
+            background-color: lightsteelblue;
+        }        
+	    table.center {
+            margin-left:auto; 
+            margin-right:auto;
+  	    }
+        caption{
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: large;
+        }  
+    </style> 
+    </head>  
     <body>
         <header>
 			<div id="header">
@@ -37,7 +52,9 @@
 			<a href="RestaurantContactUs.html">Contact Us</a>
 		</header>
         <hr>
-        <center><table>
+        <div id="menu">
+        <table class="center">
+            <tbody>
             <tr>
                 <td><p><b><big>Two by Two</big></b></br>
                     <small>The World Famous Two by Two!</br>
@@ -80,7 +97,35 @@
                     $7.95</small></p>
                 </td>
             </tr>
-        </table></center> 
+            </tbody>
+        </table>
+        </div>
+            &nbsp;
+			&nbsp;
+			&nbsp;
+        <div id="beverages">    
+        <table class="center">
+            <caption>Beverages</caption>
+            <tbody>
+            <tr>
+                <td>Root Beer</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Bottled Water</td>
+                <td>$1.25</td>
+            </tr>
+            <tr>
+                <td>Lemonade</td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Iced Tea</td>
+                <td>$1.25</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
         <hr>
         <footer>
 			<div id="footer">
