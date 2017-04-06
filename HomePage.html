@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>  
     <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>  
  </head>   
-     <style>  
-        #header {
-             background-color:peru;
-        }
-        #footer {
-            background-color:peru;
-        }
+     <style>
+       table.center {
+            margin-left:auto; 
+            margin-right:auto;
+  	    }
+       body {
+             background-color: lightgray;
+        }   
     </style> 
-        <header>
+    <header>
 			<div id="header">
 				<div class="container">
 					<h1>Colt's Fine Diner</h1>
@@ -23,19 +24,23 @@
             <div class="jumbotron">
                 <h1>We are opening a new location!</h1> 
                 <p>New location opening in Boston, MA in Winter 2018. More details
-                    to come soon.</br>
-                  <i>*This page is best viewed with Javascript enabled.</i></p> 
-            </div>  
+                    to come soon.</p>
+                <p><i>*This page is best viewed with Javascript enabled.</i></p>    
+            </div> 
          <hr>                   
             <ul class="nav nav-pills">
                 <li class="active"><a href="HomePage.html"><span class="glyphicon glyphicon-home"></span></a></li>
                 <li><a href="Menu.html">Menu</a></li>
                 <li><a href="RestaurantContactUs.html">Contact Us</a></li>
             </ul>
-        </header>    
+        </header> 
         <hr>
-        <body>
-          <div class="container">  
+    <body>
+        <div class="container">  
+            <div class="row">
+                <div class="col-2-2">  
+                
+        <!-- Carousel -->          
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
            <!-- Indicators (little dots) --> 
            <ol class="carousel-indicators">
@@ -50,8 +55,8 @@
                    <a href="#"><img src="http://placehold.it/1800x500/9f37d0/221016?text=Colt's+Fine+Diner" alt="Slide 1"></a>
                 <div class="container">
                     <div class="carousel-caption"> 
-                     <h3>Announcement #1</h3>
-                     <p>We are opening a new location!</p>
+                     <h3>Announcement #1 - 02/01/2017</h3>
+                     <p>We are opening a new location down in Boston!</p>
                     </div>
                 </div>
                 </div>
@@ -59,7 +64,7 @@
                    <a href="#"><img src="http://placehold.it/1800x500/221016/9f37d0?text=Colt's+Fine+Diner" alt="Slide 2"></a>
                 <div class="container">
                     <div class="carousel-caption"> 
-                     <h3>Announcement #2</h3>
+                     <h3>Announcement #2 - 02/08/2017</h3>
                      <p>We are rolling out our seasonal menu, with 
                         special options for this season.</p>
                     </div>
@@ -69,7 +74,7 @@
                    <a href="#"><img src="http://placehold.it/1800x500/0e246a/c22f12?text=Colt's+Fine+Diner" alt="Slide 3"></a>
                 <div class="container">
                     <div class="carousel-caption"> 
-                     <h3>Announcement #3</h3>
+                     <h3>Announcement #3 - 03/05/2017</h3>
                      <p>The Drink of the Month is SG Special Brew.</p>
                     </div>
                 </div>
@@ -78,7 +83,7 @@
                    <a href="#"><img src="http://placehold.it/1800x500/c22f12/0e246a?text=Colt's+Fine+Diner" alt="Slide 4"></a>
                 <div class="container">
                     <div class="carousel-caption"> 
-                     <h3>Announcement #4</h3>
+                     <h3>Announcement #4 - 04/06/2017</h3>
                      <p>The bar is now open earlier and later (pending town approval)</p>
                     </div>
                 </div>
@@ -93,30 +98,33 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>  
-        </div> 
-       </div>
-       <!-- Javascript -->
+        </div>        
+       <!-- Javascript must be at end -->
        <!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
        <script src="js/jquery-3.2.0.min.js"></script>
        <script src="js/bootstrap.min.js"></script>
        <hr>
             <p style="text-align:center">
-                <img src="diner.jpg"
+               <a href="#"><img src="diner.jpg"
                         alt="File Not Found"
-                        style="width:1000px;height:500px;"/>
+                        style="width:1000px;height:500px;"/></a>
                 </p>
-        <center>
-            <table border="1" width="55.2%">
+        <hr>        
+            <table border="1" width="100%">
                 <tr>
-                    <th align="left"><p><b><ins>Restaurant Description:</ins></b></br>
+                    <th align="left"><p><b><ins>Restaurant Description:</ins></b></p>
+                                    <p>
                                     Colt's Fine Diner is a family owned and operated eatery which has 
                                     been a pillar of the community for the last several decades offering family foods at reasonable prices with a fully stocked bar 
                                     which has local beers on tap. We are open 24 hours a day and seven days a week, and offer breakfast all day, lunch and dinner.</p>
                     </th>
                 </tr>
-            </table>
-        </center>
-        <hr>
+            </table>         
+       </div>
+      </div>
+     </div>  
+    </body>
+    <hr>
         <footer>
 			<div id="footer">
 				<div class="container">
@@ -124,6 +132,5 @@
 					<h4>603-555-1234</h4>
 				</div>
 			</div>		
-		</footer>   
-    </body>
+		</footer>
 </html>        

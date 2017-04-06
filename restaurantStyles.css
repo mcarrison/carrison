@@ -25,9 +25,11 @@ a:active{
 }
 
 #header h1 {
-    display:block;
+    display: block;
+    font-size: 65px;
     text-align: center;
-    font-family: 'Tahoma';
+    font-family: Franklin Gothic Medium;
+    color: white;
 }
 
 #footer .container{
@@ -35,12 +37,22 @@ a:active{
 }
 
 #footer h4 {
-    display:block;
-    text-align: center;    
+    display: block;
+    text-align: center; 
+    font-family: Verdana;
+    color: white;   
 }
 
 td {
   text-align: right; 
+}
+   
+#header {
+    background-color: #0e246a;
+}
+
+#footer {
+    background-color: #0e246a;
 }
 
 </style>
