@@ -2,13 +2,10 @@
 <html lang="en">
     <head>
         <title>Home Page</title>
-    </head>
-    <link href="restaurantStyles.css" 
-      rel="stylesheet" 
-      type="text/css" />
-<link href="css/bootstrap.css"
-	  rel="stylesheet"
-	  type="text/css" />
+    <link rel="stylesheet" href="restaurantStyles.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>  
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>  
+ </head>   
      <style>  
         #header {
              background-color:peru;
@@ -17,7 +14,6 @@
             background-color:peru;
         }
     </style> 
-    <body>
         <header>
 			<div id="header">
 				<div class="container">
@@ -27,9 +23,10 @@
             <div class="jumbotron">
                 <h1>We are opening a new location!</h1> 
                 <p>New location opening in Boston, MA in Winter 2018. More details
-                    to come soon.</p> 
-            </div>       
-			<hr>
+                    to come soon.</br>
+                  <i>*This page is best viewed with Javascript enabled.</i></p> 
+            </div>  
+         <hr>                   
             <ul class="nav nav-pills">
                 <li class="active"><a href="HomePage.html"><span class="glyphicon glyphicon-home"></span></a></li>
                 <li><a href="Menu.html">Menu</a></li>
@@ -37,6 +34,72 @@
             </ul>
         </header>    
         <hr>
+        <body>
+          <div class="container">  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <!-- Indicators (little dots) --> 
+           <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+               <li data-target="#myCarousel" data-slide-to="3"></li>
+           </ol>   
+           <!-- Wrapper slides and content -->
+           <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                   <a href="#"><img src="http://placehold.it/1800x500/9f37d0/221016?text=Colt's+Fine+Diner" alt="Slide 1"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Announcement #1</h3>
+                     <p>We are opening a new location!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                   <a href="#"><img src="http://placehold.it/1800x500/221016/9f37d0?text=Colt's+Fine+Diner" alt="Slide 2"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Announcement #2</h3>
+                     <p>We are rolling out our seasonal menu, with 
+                        special options for this season.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                   <a href="#"><img src="http://placehold.it/1800x500/0e246a/c22f12?text=Colt's+Fine+Diner" alt="Slide 3"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Announcement #3</h3>
+                     <p>The Drink of the Month is SG Special Brew.</p>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                   <a href="#"><img src="http://placehold.it/1800x500/c22f12/0e246a?text=Colt's+Fine+Diner" alt="Slide 4"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Announcement #4</h3>
+                     <p>The bar is now open earlier and later (pending town approval)</p>
+                    </div>
+                </div>
+                </div>   
+            </div>    
+          <!-- Next and Previous Controls --> 
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>  
+        </div> 
+       </div>
+       <!-- Javascript -->
+       <!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+       <script src="js/jquery-3.2.0.min.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <hr>
             <p style="text-align:center">
                 <img src="diner.jpg"
                         alt="File Not Found"
