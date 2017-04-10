@@ -2,13 +2,10 @@
 <html lang="en">
     <head>
         <title>Menu</title>
-    </head>
-    <link href="restaurantStyles.css" 
-      rel="stylesheet" 
-      type="text/css" />      
-<link href="css/bootstrap.css"
-	  rel="stylesheet"
-	  type="text/css" />
+    </head>  
+    <link type="text/css" rel="stylesheet" href="restaurantStyles.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>  
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css"/>  
     <style>  
         #menu td {
             text-align: center;
@@ -31,7 +28,29 @@
         }          
        body {
              background-color: lightgray;
-        }  
+        }
+        /*.carousel-caption h3 {
+            color: purple;
+            font-weight: bold;    
+        }
+        .carousel-caption p {
+            color: purple;             
+            font-weight: bold;   
+        }*/        
+        .carousel-indicators .active{
+            border: black;
+        }
+        .carousel-indicators li{
+            background-color: black;
+            border: black;
+        }
+        #myCarousel {
+            width: 60%;
+            background-position: center;
+        }
+        .carousel-caption{
+            background: rgba(0,0,0,0.5);
+        }
     </style> 
     <header>
 			<div id="header">
@@ -68,7 +87,7 @@
                     $5.95</small></p>
                 </td>
                 <td><p><b><big>Ron Swanson's Breakfast</big></b><br>
-                    <small>Created by Ron Swansom himself!<br>
+                    <small>Created by Ron Swanson himself!<br>
                     All the eggs and bacon you can eat<br>
                     Served with your choice of toast and meat<br>
                     $7.95</small></p>
@@ -123,9 +142,94 @@
             </tbody>
         </table>
         </div>
+        <hr>
+        <center>
+        <!-- Carousel -->          
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           <!-- Indicators (little dots) --> 
+           <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+               <li data-target="#myCarousel" data-slide-to="3"></li>
+               <li data-target="#myCarousel" data-slide-to="4"></li>
+               <li data-target="#myCarousel" data-slide-to="5"></li>
+           </ol>   
+           <!-- Wrapper slides and content -->
+           <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                   <a href="#"><img class="img-responsive center-block" src="breakfast-bb.jpg" alt="two_by_two"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Two by Two!</h3>
+                     <p>The World Famous Two by Two!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                   <a href="#"><img class="img-responsive center-block" src="veggie_omelet.jpg" alt="veggie_omelet"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Farmhouse Breakfast</h3>
+                     <p>Straight from the Farm to your plate!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                   <a href="#"><img class="img-responsive center-block" src="eggs_bacon.jpg" alt="eggs_bacon"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3 color="black">Ron Swanson's Breakfast</h3>
+                     <p>Created by Ron Swanson himself!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="item">
+                   <a href="#"><img class="img-responsive center-block" src="Buffalo_Chicken_Sandwich.jpg" alt="buff_chick_sand"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Buffalo Chicken Sandwich</h3>
+                     <p>Our most popular item!</p>
+                    </div>
+                </div>
+                </div>   
+                <div class="item">
+                   <a href="#"><img class="img-responsive center-block" src="house_salad.jpg" alt="house_salad"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Super Salad</h3>
+                     <p>Everything but the kitchen sink!</p>
+                    </div>
+                </div>
+                </div> 
+                <div class="item">
+                   <a href="#"><img class="img-responsive center-block" src="steak.jpg" alt="steak"></a>
+                <div class="container">
+                    <div class="carousel-caption"> 
+                     <h3>Steak Dinner</h3>
+                     <p>As big as it gets!</p>
+                    </div>
+                </div>
+                </div> 
+            </div>    
+          <!-- Next and Previous Controls --> 
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>  
+        </div>
+        </center>
             </div>    
         </div>  
-      </div>     
+      </div> 
+      <!-- Javascript must be at end -->
+       <!-- <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+       <script type="text/JavaScript" src="js/jquery-3.2.0.min.js"></script>
+       <script type="text/JavaScript" src="js/bootstrap.min.js"></script>    
     </body>
     <hr>
         <footer>
