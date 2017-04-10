@@ -24,6 +24,13 @@ function validateItems() {
     clearErrors();
     var num1 = document.forms["numberFun"]["num1"].value;
     var num2 = document.forms["numberFun"]["num2"].value;
+     if ((num1 == "" || isNaN(num1)) && (num2 == "" || isNaN(num2))) {
+        alert("Num1 and Num2 must be filled in with a number.");
+        document.forms["numberFun"]["num1"]
+           .parentElement.className = "form-group has-error";
+        document.forms["numberFun"]["num1"].focus();
+        return false;
+    }
     if (num1 == "" || isNaN(num1)) {
         alert("Num1 must be filled in with a number.");
         document.forms["numberFun"]["num1"]
@@ -40,11 +47,13 @@ function validateItems() {
    }
    document.getElementById("results").style.display = "block";
    document.getElementById("submitButton").innerText = "Recalculate";
-   document.getElementById("addResult").innerText = Number(num1) +
-                                                     Number(num2);
+   document.getElementById("number1").innerText = num1
+   document.getElementById("number2").innerText = num2
+   document.getElementById("addResult").innerText = Number(num1) + Number(num2);
    document.getElementById("subtractResult").innerText = num1 - num2;
    document.getElementById("multiplyResult").innerText = num1 * num2;
    document.getElementById("divideResult").innerText = num1 / num2;
+   document.getElementById("squared").innerText = (Number(num1) + Number(num2)) * (Number(num1) + Number(num2));
    // We are returning false so that the form doesn't submit 
    // and so that we can see the results
    return false;

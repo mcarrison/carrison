@@ -4,10 +4,11 @@
     <script type="text/JavaScript" src="clickToAddItems.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         rel="stylesheet" type="text/css" />
+    <title>Click to Add Items</title>    
 </head>
 <body>
 <div class="container">
-    <h1>Click to Add Items</h1>
+    <h1>Number Fun</h1>
     <form name="numberFun" onsubmit="return validateItems();" 
           onreset="resetForm();" class="form-inline">
             <div class="form-group">
@@ -30,6 +31,14 @@
         </thead>
         <tbody>
             <tr>
+                <td>Number 1</td>
+                <td><span id="number1"></span></td>
+            </tr>
+            <tr>
+                <td>Number 2</td>
+                <td><span id="number2"></span></td>
+            </tr>
+            <tr>
                 <td>Addition (+)</td>
                 <td><span id="addResult"></span></td>
             </tr>
@@ -44,6 +53,10 @@
             <tr>
                 <td>Division (/)</td>
                 <td><span id="divideResult"></span></td>
+            </tr>
+            <tr>
+                <td>Squared (^2)</td>
+                <td><span id="squared"></span></td>
             </tr>
         </tbody>
     </table>
